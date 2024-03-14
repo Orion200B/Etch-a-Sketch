@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="info">    
+        <h1>Etch-a-Sketch</h1>
+        <div class="buttons">
+            <p>Settings</p>
+            <div class="setting">
+                <label class="colorText"><input type="color" id="getColor">Change Color!</label>
+                <label id="numberDisplay">18</label><input type="range" min="1" max="64" id="gridNumber">
+                <button id="applyGrid" class="buttonCSS apply">Apply Grid Number!✅</button>
+                <button id="clearBoard" class="buttonCSS clean">Clear Sketch!🧹</button>
+                <button id="rainbowMode" onclick="toggleRainbow()" class="buttonCSS rainbowBtn">Rainbow Mode!🌈</button>
+                <button id="eraser" onclick="toggleButton()" class="buttonCSS eraser">Use Eraser!🧽</button>
+                <button id="guidelines" class="buttonCSS guidelines">Turn Guidelines Off!</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="container"></div>
+</body>
+</html>

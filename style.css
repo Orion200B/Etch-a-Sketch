@@ -1,0 +1,183 @@
+@font-face{
+    font-family: katahdinRound;
+    src: url(fonts/KatahdinRound.otf);
+}
+
+*{
+    font-family: katahdinRound;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 400px;
+    background-color: #9AD0C2;
+    margin: auto;
+}
+
+#container{
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    width: 800px;
+    height: 800px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.gridX{
+    display: flex;
+}
+
+.grid{
+    box-sizing: border-box;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    background-color: #2D9596;
+    width: 450px;
+    height: 600px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    border: 5px dashed black;
+}
+
+p{
+    font-size: 50px;
+    margin: 0;
+}
+
+.setting{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#getColor{
+    width: 50px;
+    border: none;
+    height: 50px;
+}
+
+.colorText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 23px;
+}
+
+.buttonCSS{
+    box-sizing: border-box;
+    border: 3px solid black;
+    color: white;
+}
+
+.rainbowBtn{
+    background-color: #FF474D;
+}
+
+.eraser{
+    background-color: #949494;
+}
+
+.guidelines{
+    background-color: black;
+    border: 3px solid white;
+}
+
+.apply{
+    background-color: green;    
+}
+
+.clean{
+    background-color: #023020;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 50px;
+    color: #265073;
+    background-color: #F1FADA;
+    width: 500px;
+    height: 100px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    border: 5px dashed black;
+    animation: titleAnim 5s infinite;
+}
+
+@keyframes titleAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+#gridNumber{
+    width: 300px;
+}
+
+button{
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 21px;
+    animation: buttonReset .1s forwards;
+}
+
+button:hover{
+    animation: buttonAnim .1s forwards;
+}
+
+@keyframes buttonAnim{
+    0%{
+        width: 300px;
+        height: 50px;
+    }
+    100%{
+        width: 305px;
+        height: 55px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+@keyframes buttonReset{
+    0%{
+        width: 305px;
+        height: 55px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    100%{
+        width: 300px;
+        height: 50px;  
+    }
+}
